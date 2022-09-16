@@ -30,4 +30,12 @@ function TotalList() {
         });
         setStudents(updatedStudents);
       }
+
+      function handleAddStudent(newStudent) {
+        setStudents([...students, newStudent]);
+      }
+    
+      function handleCategoryChange(category) {
+        setSelectedCategory(category);
+      }
     
