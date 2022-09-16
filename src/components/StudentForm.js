@@ -56,7 +56,7 @@ function StudentForm({ onAddStudent }) {
         </select>
       </label>
 
-      <button type="submit" disabled={!name}>Add Employee</button>
+      <button type="submit" disabled={!name}>Add Student</button>
     </form>
   );
 }
