@@ -19,3 +19,4 @@ function Student({student, onDeleteStudent }){
         </li>
       );
 }
+export default Employee;
