@@ -39,3 +39,30 @@ function TotalList() {
         setSelectedCategory(category);
       }
     
+      const studentsToDisplay = students.filter((student) => {
+        if (selectedCategory === "All") return true;
+    
+        return student.category === selectedCategory;
+      });
+      return (
+        <div className="ShoppingList">
+          <StudentForm onAddStudent={handleAddStudent} />
+          <Filter
+            category={selectedCategory}
+            onCategoryChange={handleCategoryChange}
+          />
+          <ul className="Items">
+            {employeesToDisplay.map((student) => (
+              <Employee
+                key={student.id}
+                student={student}
+                onUpdateStudent={handleUpdateStudent}
+                onDeleteStudent={handleDeleteStudent}
+              />
+            ))}
+          </ul>
+        </div>
+      );
+    }
+    
+    export default TotalList;
