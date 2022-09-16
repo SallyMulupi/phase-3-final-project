@@ -19,4 +19,15 @@ function TotalList() {
         );
         setStudents(updatedStudents);
       }
+
+      function handleUpdateStudent(updatedStudent) {
+        const updatedStudents = students.map((student) => {
+          if (student.id === updatedStudent.id) {
+            return updatedStudent;
+          } else {
+            return student;
+          }
+        });
+        setStudents(updatedStudents);
+      }
     
