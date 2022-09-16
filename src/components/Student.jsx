@@ -9,14 +9,14 @@ function Student({student, onDeleteStudent }){
         .then(() => onDeleteStudent(student));
     }
 
-    eturn (
-        <li className={employee.is_present ? "in-cart" : ""}>
-          <span>{employee.name}</span>
-          <span className="category">{employee.category}</span>
+    return (
+        <li className={student.is_present ? "in-cart" : ""}>
+          <span>{student.name}</span>
+          <span className="category">{student.category}</span>
           <button className="remove" onClick={handleDeleteClick}>
             Delete
           </button>
         </li>
       );
 }
-export default Employee;
+export default Student;

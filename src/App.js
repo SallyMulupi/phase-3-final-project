@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import TotalList from "./TotalList";
-import Header from "./Header";
+import TotalList from "./components/TotalList";
+import Header from "./components/Header";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);

@@ -9,7 +9,7 @@ function Filter({ category, onCategoryChange }) {
           value={category}
           onChange={(e) => onCategoryChange(e.target.value)}
         >
-         <option value="Select Course">Select <Course></Course></option>
+         <option value="Select Course">Select Course</option>
           <option value="Finance">Finance</option>
           <option value="Accounting">Accounting</option>
           <option value="I.T">I.T</option>

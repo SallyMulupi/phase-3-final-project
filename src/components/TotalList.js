@@ -52,8 +52,8 @@ function TotalList() {
             onCategoryChange={handleCategoryChange}
           />
           <ul className="Items">
-            {employeesToDisplay.map((student) => (
-              <Employee
+            {studentsToDisplay.map((student) => (
+              <Student
                 key={student.id}
                 student={student}
                 onUpdateStudent={handleUpdateStudent}
