@@ -37,3 +37,28 @@ function StudentForm({ onAddStudent }) {
           onChange={(e) => setName(e.target.value)}
         />
       </label>
+
+      <label>
+        Course:
+        <select
+          name="category"
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
+        >
+          <option value="Select Course">Select <Course></Course></option>
+          <option value="Finance">Finance</option>
+          <option value="Accounting">Accounting</option>
+          <option value="I.T">I.T</option>
+          <option value="I.C.T">I.C.T</option>
+          <option value="B.I.T">B.I.T</option>
+          <option value="Software Development">Software Development</option>
+          <option value="Data Science">Data Science</option>
+        </select>
+      </label>
+
+      <button type="submit" disabled={!name}>Add Employee</button>
+    </form>
+  );
+}
+
+export default StudentForm;
